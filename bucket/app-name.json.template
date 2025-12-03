@@ -1,25 +1,63 @@
 {
-    "version": "Nightly",
-    "description": "Very customizable imageboard/booru downloader with powerful filenaming features.",
-    "homepage": "https://www.bionus.org/imgbrd-grabber/",
-    "license": "Apache-2.0",
-    "url": "https://github.com/Bionus/imgbrd-grabber/releases/download/nightly/Grabber_nightly_x64.zip",
-    "bin": [
-        [
-            "Grabber-cli.exe",
-            "grabber"
-        ]
+    "##": "This file is a template. Fill the blanks and add or remove fields as necessary.",
+    "version": "",
+    "description": "",
+    "homepage": "",
+    "license": "",
+    "notes": "",
+    "architecture": {
+        "64bit": {
+            "url": "",
+            "hash": ""
+        },
+        "32bit": {
+            "url": "",
+            "hash": ""
+        },
+        "arm64": {
+            "url": "",
+            "hash": ""
+        }
+    },
+    "pre_install": "",
+    "installer": {
+        "script": ""
+    },
+    "post_install": [
+        "",
+        ""
     ],
-    "shortcuts": [
-        [
-            "Grabber.exe",
-            "Grabber"
-        ]
+    "uninstaller": {
+        "script": ""
+    },
+    "bin": "",
+    "env_add_path": [
+        "",
+        ""
+    ],
+    "persist": [
+        "",
+        ""
     ],
     "checkver": {
-        "github": "https://github.com/Bionus/imgbrd-grabber/"
+        "url": "",
+        "regex": ""
     },
     "autoupdate": {
-        "url": "https://github.com/Bionus/imgbrd-grabber/releases/download/nightly/Grabber_nightly_x64.zip"
+        "architecture": {
+            "64bit": {
+                "url": ""
+            },
+            "32bit": {
+                "url": ""
+            },
+            "arm64": {
+                "url": ""
+            }
+        },
+        "hash": {
+            "url": "",
+            "regex": ""
+        }
     }
 }
