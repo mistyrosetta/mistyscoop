@@ -10,7 +10,7 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/lengoc-quang/ExplorerBlurMica/releases/download/1.1.0/Release_x64.zip",
+            "url": "https://github.com/lengoc-quang/ExplorerBlurMica/releases/download/v1.1.0/Release_x64.zip",
             "hash": "49af1f897fce6d4dea5a0e2cad10688fcb44975ade5bab5661cf87227239c40f"
         }
     },
