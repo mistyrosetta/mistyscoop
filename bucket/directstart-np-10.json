@@ -11,6 +11,19 @@
             "DirectStart"
         ]
     ],
+        "installer": {
+        "script": [
+            "Invoke-ExternalCommand \"$dir\\DirectStart3.0-installer-win10.exe\" -ArgumentList @('/S', \"/D=$dir\") -Quiet",
+            "Remove-Item \"$dir\\DirectStart3.0-installer-win10.exe\" -Force -ErrorAction SilentlyContinue | Out-Null",
+        ]
+        },
+     "pre_uninstall": [
+        "Invoke-ExternalCommand \"$dir\\unins000.exe\" -ArgumentList '/S' -Quiet",
+        "Start-Sleep -Seconds 10",
+        "$bucket = $install.bucket",
+        ". \"$bucketsdir\\$bucket\\bin\\utils.ps1\"",
+        "Stop-App"
+    ],
     "checkver": {
         "github": "https://github.com/lixkote/DirectStart"
     },
